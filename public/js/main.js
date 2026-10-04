@@ -1,19 +1,19 @@
-/* Everchef Tech Supply — site script
+/* Vantelia Home Technologies — site script
    Shared header/footer, cart, cookie consent, glimmer background and page renderers. */
 (function () {
   "use strict";
 
   const BUSINESS = {
-    name: "Everchef Tech Supply",
-    legal: "Everchef Tech Supply LLC",
+    name: "Vantelia Home Technologies",
+    legal: "Vantelia Home Technologies LLC",
     email: "everchef.tech@outlook.com",
     phone: "412-378-2417",
     phoneHref: "+14123782417",
     location: "East McKeesport, PA",
   };
 
-  const CART_KEY = "everchef_cart_v1";
-  const CONSENT_KEY = "everchef_cookie_consent_v1";
+  const CART_KEY = "vantelia_cart_v1";
+  const CONSENT_KEY = "vantelia_cookie_consent_v1";
   const MAX_QTY = 10;
 
   const page = document.body.dataset.page || "";
@@ -141,8 +141,8 @@
     header.innerHTML = `
       <div class="container">
         <a class="brand" href="index.html" aria-label="${BUSINESS.name} home">
-          <span class="brand-name">Everchef</span>
-          <span class="brand-sub">Tech Supply</span>
+          <span class="brand-name">Vantelia</span>
+          <span class="brand-sub">Home Technologies</span>
         </a>
         <a class="cart-link mobile-cart nav-cart" href="cart.html">${ICON_BAG}<span class="cart-count">0</span></a>
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
@@ -170,8 +170,8 @@
         <div class="footer-grid">
           <div>
             <a class="brand" href="index.html">
-              <span class="brand-name">Everchef</span>
-              <span class="brand-sub">Tech Supply</span>
+              <span class="brand-name">Vantelia</span>
+              <span class="brand-sub">Home Technologies</span>
             </a>
             <p style="margin-top:18px">Refined kitchen hardware and home electronics, chosen to perform beautifully every day.</p>
           </div>
@@ -229,7 +229,7 @@
       btn.addEventListener("click", () => {
         const choice = btn.dataset.consent;
         safeSet(CONSENT_KEY, JSON.stringify({ choice, date: new Date().toISOString() }));
-        window.everchefConsent = choice;
+        window.vanteliaConsent = choice;
         document.dispatchEvent(new CustomEvent("consent:change", { detail: choice }));
         hide();
       })
@@ -241,7 +241,7 @@
 
     try {
       const saved = JSON.parse(safeGet(CONSENT_KEY) || "null");
-      if (saved && saved.choice) window.everchefConsent = saved.choice;
+      if (saved && saved.choice) window.vanteliaConsent = saved.choice;
       else setTimeout(show, 900);
     } catch (e) { setTimeout(show, 900); }
   }

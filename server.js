@@ -1,4 +1,4 @@
-/* Everchef Tech Supply — Node web server (for local development or Node hosts
+/* Vantelia Home Technologies — Node web server (for local development or Node hosts
    such as Render/Railway). On Netlify the same endpoints run as Netlify
    Functions instead — see netlify/functions and netlify.toml.
 
@@ -79,4 +79,4 @@ app.use("/api", (req, res) => res.status(404).json({ error: "Not found" }));
 app.use(express.static(PUBLIC_DIR, { extensions: ["html"], maxAge: "1h" }));
 app.use((req, res) => res.status(404).sendFile(path.join(PUBLIC_DIR, "404.html")));
 
-app.listen(PORT, () => console.log(`Everchef Tech Supply running at http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Vantelia Home Technologies running at http://localhost:${PORT}`));

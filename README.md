@@ -1,6 +1,6 @@
-# Everchef Tech Supply
+# Vantelia Home Technologies
 
-Storefront for **Everchef Tech Supply LLC** (East McKeesport, PA): refined kitchen hardware and home electronics, with a cart and a working Stripe Checkout.
+Storefront for **Vantelia Home Technologies LLC** (East McKeesport, PA): refined kitchen hardware and home electronics, with a cart and a working Stripe Checkout.
 
 ## What's included
 

@@ -2,7 +2,7 @@
   "name": "everchef-tech-supply",
   "version": "1.0.0",
   "private": true,
-  "description": "Everchef Tech Supply storefront with Stripe Checkout",
+  "description": "Vantelia Home Technologies storefront with Stripe Checkout",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
