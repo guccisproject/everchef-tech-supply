@@ -1,0 +1,48 @@
+# Netlify configuration: the site in /public is served as static files and
+# the /api/* endpoints run as Netlify Functions (netlify/functions).
+
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+  command = "echo 'No build step required'"
+
+[functions]
+  node_bundler = "esbuild"
+  # products.json is bundled automatically because lib/store.js requires it.
+
+# API routes -> functions (specific routes first)
+[[redirects]]
+  from = "/api/stripe/webhook"
+  to = "/.netlify/functions/stripe-webhook"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/checkout"
+  to = "/.netlify/functions/checkout"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/order"
+  to = "/.netlify/functions/order"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/contact"
+  to = "/.netlify/functions/contact"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"

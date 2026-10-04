@@ -49,13 +49,30 @@ Stripe collects the shipping address, phone number and payment on its own secure
 
 Fill in the `SMTP_*` values in `.env` to have form submissions emailed to `everchef.tech@outlook.com`. Without them, the form opens the visitor's own email app with their message already filled in, so no message is lost.
 
-## Deploying
+## Deploying to Netlify (recommended)
 
-Checkout and the contact form need the Node server, so deploy to a host that runs Node, such as Render, Railway, Fly.io, Heroku or a VPS:
+The repo is ready for Netlify. `netlify.toml` serves `public/` as the website and runs checkout, order lookup, the contact form and the Stripe webhook as **Netlify Functions** (`netlify/functions/`). There's no build step.
+
+1. Sign in at https://app.netlify.com with your GitHub account.
+2. **Add new site → Import an existing project → GitHub** and choose `everchef-tech-supply`.
+3. Pick the branch to deploy. Leave the build settings Netlify fills in from `netlify.toml` (publish directory `public`, functions `netlify/functions`).
+4. Before or after the first deploy, open **Site configuration → Environment variables** and add:
+   - `STRIPE_SECRET_KEY`: your `sk_test_…` key (switch to `sk_live_…` when you launch)
+   - *(optional)* `SITE_URL`: your custom domain once connected, e.g. `https://everchef.shop`
+   - *(optional)* `STRIPE_AUTOMATIC_TAX=true`, `STRIPE_WEBHOOK_SECRET`, and the `SMTP_*` / `CONTACT_TO` values from `.env.example`
+5. **Deploys → Trigger deploy → Deploy site.** Environment variables only take effect on a new deploy.
+6. Test a purchase with card `4242 4242 4242 4242` while using the test key.
+7. *(Optional)* Add your own domain under **Domain management**. Netlify provides the HTTPS certificate for free.
+
+If you set up a Stripe webhook, point it at `https://YOURDOMAIN/api/stripe/webhook`.
+
+## Deploying to a Node host instead
+
+On Render, Railway, Fly.io, Heroku or a VPS, run the included Express server:
 
 - **Build command:** `npm install`
 - **Start command:** `npm start`
-- **Environment variables:** the same ones as in `.env`. Set `SITE_URL` to your live domain, for example `https://everchef.shop`.
+- **Environment variables:** the same as in `.env`. Set `SITE_URL` to your live domain.
 
 ## Images
 
