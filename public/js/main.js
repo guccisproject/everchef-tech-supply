@@ -590,6 +590,12 @@
               }),
             });
             const data = await res.json().catch(() => ({}));
+            if (data.code === "checkout_disabled") {
+              msg.innerHTML = `<div class="alert">Online checkout is opening soon. To place your order today, email us at <a href="mailto:${BUSINESS.email}?subject=${encodeURIComponent("Order request")}"><u>${BUSINESS.email}</u></a> or call <a href="tel:${BUSINESS.phoneHref}"><u>${BUSINESS.phone}</u></a> and we'll take care of it personally.</div>`;
+              btn.disabled = false;
+              btn.textContent = "Continue to Secure Payment";
+              return;
+            }
             if (!res.ok || !data.url) throw new Error(data.error || "Checkout is temporarily unavailable.");
             window.location.href = data.url;
           } catch (err) {
