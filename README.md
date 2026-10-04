@@ -47,7 +47,7 @@ Stripe collects the shipping address, phone number and payment on its own secure
 
 ## Contact form email
 
-Fill in the `SMTP_*` values in `.env` to have form submissions emailed to `everchef.tech@outlook.com`. Without them, the form opens the visitor's own email app with their message already filled in, so no message is lost.
+Fill in the `SMTP_*` values in `.env` to have form submissions emailed to `vantelia.home@outlook.com`. Without them, the form opens the visitor's own email app with their message already filled in, so no message is lost.
 
 ## Deploying to Netlify (recommended)
 
@@ -58,7 +58,7 @@ The repo is ready for Netlify. `netlify.toml` serves `public/` as the website an
 3. Pick the branch to deploy. Leave the build settings Netlify fills in from `netlify.toml` (publish directory `public`, functions `netlify/functions`).
 4. Before or after the first deploy, open **Site configuration → Environment variables** and add:
    - `STRIPE_SECRET_KEY`: your `sk_test_…` key (switch to `sk_live_…` when you launch)
-   - *(optional)* `SITE_URL`: your custom domain once connected, e.g. `https://everchef.shop`
+   - *(optional)* `SITE_URL`: your custom domain once connected, e.g. `https://yourdomain.com`
    - *(optional)* `STRIPE_AUTOMATIC_TAX=true`, `STRIPE_WEBHOOK_SECRET`, and the `SMTP_*` / `CONTACT_TO` values from `.env.example`
 5. **Deploys → Trigger deploy → Deploy site.** Environment variables only take effect on a new deploy.
 6. Test a purchase with card `4242 4242 4242 4242` while using the test key.

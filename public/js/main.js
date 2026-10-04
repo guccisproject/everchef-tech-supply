@@ -6,7 +6,7 @@
   const BUSINESS = {
     name: "Vantelia Home Technologies",
     legal: "Vantelia Home Technologies LLC",
-    email: "everchef.tech@outlook.com",
+    email: "vantelia.home@outlook.com",
     phone: "412-378-2417",
     phoneHref: "+14123782417",
     location: "East McKeesport, PA",
