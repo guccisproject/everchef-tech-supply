@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Everchef Tech Supply</title>
+  <meta name="description" content="Contact Everchef Tech Supply by email, phone or our contact form. Based in East McKeesport, PA.">
+  <meta name="theme-color" content="#050506">
+  <meta property="og:title" content="Contact Us — Everchef Tech Supply">
+  <meta property="og:description" content="Contact Everchef Tech Supply by email, phone or our contact form. Based in East McKeesport, PA.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+<main>
+
+  <div class="container">
+    <header class="page-head reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <hr class="rule">
+      <p>Questions about a product, an order or a return? Send us a note &mdash; we reply within one business day.</p>
+    </header>
+    <div class="cart-layout">
+      <div class="glass panel reveal">
+        <h3>Send a Message</h3>
+        <form id="contact-form" novalidate>
+          <div class="grid grid-2" style="gap:0 20px">
+            <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" required maxlength="100" autocomplete="name"></div>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required maxlength="200" autocomplete="email"></div>
+          </div>
+          <div class="grid grid-2" style="gap:0 20px">
+            <div class="field">
+              <label for="c-subject">Topic</label>
+              <select id="c-subject" name="subject">
+                <option>General Question</option>
+                <option>Order Status</option>
+                <option>Returns &amp; Refunds</option>
+                <option>Product Support</option>
+                <option>Warranty Claim</option>
+                <option>Wholesale &amp; Partnerships</option>
+              </select>
+            </div>
+            <div class="field"><label for="c-order">Order number (optional)</label><input id="c-order" name="order" maxlength="60"></div>
+          </div>
+          <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" required maxlength="4000"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="c-company">Company</label><input id="c-company" name="company" tabindex="-1" autocomplete="off"></div>
+          <div id="contact-msg" role="status"></div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <aside class="glass panel reveal">
+        <h3>Reach Us Directly</h3>
+        <div class="contact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg><div><h4>Email</h4><a href="mailto:everchef.tech@outlook.com">everchef.tech@outlook.com</a></div></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg><div><h4>Phone</h4><a href="tel:+19046632417">904-663-2417</a></div></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><h4>Location</h4><span>East McKeesport, Pennsylvania</span><br><span class="muted">Online retailer &middot; no showroom</span></div></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h4>Support Hours</h4><span>Monday &ndash; Friday, 9am &ndash; 5pm ET</span><br><span class="muted">Replies within one business day</span></div></div>
+      </aside>
+    </div>
+  </div>
+
+</main>
+<script src="js/main.js" defer></script>
+</body>
+</html>

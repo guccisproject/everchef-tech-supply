@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Everchef Tech Supply</title>
+  <meta name="description" content="Secure checkout powered by Stripe.">
+  <meta name="theme-color" content="#050506">
+  <meta property="og:title" content="Checkout — Everchef Tech Supply">
+  <meta property="og:description" content="Secure checkout powered by Stripe.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="checkout">
+<main>
+
+  <div class="container">
+    <header class="page-head">
+      <span class="eyebrow">Secure Checkout</span>
+      <h1>Checkout</h1>
+      <hr class="rule">
+      <p>Review your order, choose a delivery option, then complete payment on Stripe's secure checkout.</p>
+    </header>
+    <div class="cart-layout" id="checkout-layout">
+      <div class="glass panel">
+        <h3>Your Order</h3>
+        <div id="checkout-items"></div>
+      </div>
+      <aside class="glass panel" aria-label="Payment">
+        <form id="checkout-form" novalidate>
+          <div class="field">
+            <label for="email">Email for receipt (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="shipping">Delivery</label>
+            <select id="shipping" name="shipping">
+              <option value="standard">Standard &middot; 3&ndash;7 business days (free over $75, otherwise $9.95)</option>
+              <option value="expedited">Expedited &middot; 2&ndash;3 business days ($24.95)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="giftNote">Gift note (optional)</label>
+            <textarea id="giftNote" name="giftNote" maxlength="300" style="min-height:90px" placeholder="Add a short message for the recipient"></textarea>
+          </div>
+          <div id="checkout-summary-rows"></div>
+          <label style="display:flex;gap:12px;align-items:flex-start;margin:22px 0;font-family:inherit;font-variant:small-caps;text-transform:none;letter-spacing:.03em;font-size:1rem;color:var(--text)">
+            <input type="checkbox" name="agree" style="width:auto;margin-top:6px">
+            <span>I agree to the <a href="terms.html" target="_blank"><u>Terms &amp; Conditions</u></a>, <a href="shipping.html" target="_blank"><u>Shipping Policy</u></a> and <a href="returns.html" target="_blank"><u>Returns &amp; Refunds Policy</u></a>.</span>
+          </label>
+          <div id="checkout-msg" role="alert"></div>
+          <button class="btn btn-block" type="submit" id="pay-btn">Continue to Secure Payment</button>
+          <p class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Payments processed securely by Stripe</p>
+          <p class="note center" style="margin-top:6px">Shipping address and payment details are collected on the next step. We never see or store your card number.</p>
+        </form>
+      </aside>
+    </div>
+  </div>
+
+</main>
+<script src="js/main.js" defer></script>
+</body>
+</html>

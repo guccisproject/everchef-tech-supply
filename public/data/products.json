@@ -1,0 +1,215 @@
+{
+  "currency": "usd",
+  "shipping": {
+    "freeThreshold": 7500,
+    "standard": { "name": "Standard Shipping (3–7 business days)", "amount": 995, "minDays": 3, "maxDays": 7 },
+    "expedited": { "name": "Expedited Shipping (2–3 business days)", "amount": 2495, "minDays": 2, "maxDays": 3 }
+  },
+  "categories": [
+    { "id": "kitchen", "name": "Kitchen" },
+    { "id": "coffee", "name": "Coffee & Tea" },
+    { "id": "electronics", "name": "Home Electronics" },
+    { "id": "bundles", "name": "Bundles & Sets" }
+  ],
+  "products": [
+    {
+      "id": "aero-air-fryer",
+      "name": "Aero 6-Qt Digital Air Fryer",
+      "category": "kitchen",
+      "price": 12900,
+      "badge": "Bestseller",
+      "image": "https://images.unsplash.com/photo-1695089028114-ce28248f0ab9?auto=format&fit=crop&w=1000&q=80",
+      "short": "Crisp, golden results with a fraction of the oil.",
+      "description": "A quiet, matte-black workhorse with rapid 360° air circulation and a responsive touch display. Eight presets take the guesswork out of weeknight dinners, while the nonstick basket lifts out and goes straight into the dishwasher.",
+      "features": ["6-quart family-size basket", "8 one-touch presets with shake reminder", "Adjustable 170–400°F temperature range", "Dishwasher-safe, PFOA-free nonstick basket"],
+      "specs": { "Capacity": "6 qt", "Power": "1700 W", "Finish": "Matte black", "Dimensions": "13.4 × 11.2 × 12.6 in" }
+    },
+    {
+      "id": "lumen-glass-kettle",
+      "name": "Lumen Glass Electric Kettle",
+      "category": "coffee",
+      "price": 6400,
+      "image": "https://images.unsplash.com/photo-1643114786355-ff9e52736eab?auto=format&fit=crop&w=1000&q=80",
+      "short": "Five precise temperatures for every tea and pour.",
+      "description": "Borosilicate glass and brushed steel, softly lit while it heats. Choose from five temperature settings, then let the keep-warm function hold your water ready for up to an hour.",
+      "features": ["1.7 L borosilicate glass body", "5 temperature presets (160–212°F)", "60-minute keep-warm", "Auto shut-off and boil-dry protection"],
+      "specs": { "Capacity": "1.7 L", "Power": "1500 W", "Finish": "Glass / brushed steel", "Cord": "360° swivel base" }
+    },
+    {
+      "id": "barista-espresso",
+      "name": "Barista Compact Espresso Machine",
+      "category": "coffee",
+      "price": 24900,
+      "badge": "New",
+      "image": "https://images.unsplash.com/photo-1620807773206-49c1f2957417?auto=format&fit=crop&w=1000&q=80",
+      "short": "Café-quality espresso in a countertop footprint.",
+      "description": "A 15-bar pump, fast thermoblock heating and a steady steam wand deliver rich crema and silky microfoam in minutes. The slim stainless profile fits beneath standard cabinets without compromise.",
+      "features": ["15-bar Italian pump", "Ready to brew in under 45 seconds", "Commercial-style steam wand", "Removable 1.5 L water reservoir"],
+      "specs": { "Pressure": "15 bar", "Power": "1350 W", "Finish": "Stainless steel / black", "Dimensions": "6.3 × 12.2 × 12.0 in" }
+    },
+    {
+      "id": "precision-burr-grinder",
+      "name": "Precision Conical Burr Grinder",
+      "category": "coffee",
+      "price": 7900,
+      "image": "https://images.unsplash.com/photo-1461988279488-1dac181a78f9?auto=format&fit=crop&w=1000&q=80",
+      "short": "Consistent grounds from espresso to French press.",
+      "description": "Hardened steel conical burrs and 31 grind settings give you a uniform grind for any brew method. A low-speed motor keeps heat down and flavor in.",
+      "features": ["31 precise grind settings", "Stainless conical burrs", "Timed dosing dial (1–12 cups)", "Anti-static grounds container"],
+      "specs": { "Bean hopper": "8.8 oz", "Power": "150 W", "Finish": "Black / stainless", "Settings": "31" }
+    },
+    {
+      "id": "atelier-stand-mixer",
+      "name": "Atelier 5.5-Qt Stand Mixer",
+      "category": "kitchen",
+      "price": 26900,
+      "image": "https://images.unsplash.com/photo-1693875161668-5c4ae0f2bf20?auto=format&fit=crop&w=1000&q=80",
+      "short": "Ten speeds of steady, planetary mixing power.",
+      "description": "A die-cast tilt-head mixer with full planetary action that reaches every corner of the bowl. From whipped cream to dense bread dough, it holds its pace without wandering across the counter.",
+      "features": ["5.5-qt brushed stainless bowl", "10 speeds with soft-start", "Includes dough hook, flat beater and whisk", "Pouring shield with ingredient chute"],
+      "specs": { "Capacity": "5.5 qt", "Power": "600 W", "Finish": "Graphite", "Weight": "17.6 lb" }
+    },
+    {
+      "id": "vortex-blender",
+      "name": "Vortex High-Speed Blender",
+      "category": "kitchen",
+      "price": 11900,
+      "image": "https://images.unsplash.com/photo-1585237672814-8f85a8118bf6?auto=format&fit=crop&w=1000&q=80",
+      "short": "Velvety smoothies, soups and nut butters.",
+      "description": "A powerful 1400-watt motor and six-point stainless blades pull ingredients into a smooth, even vortex. Variable speed and pulse control give you texture exactly as you like it.",
+      "features": ["64-oz BPA-free pitcher", "Variable speed dial plus pulse", "Self-cleaning program", "Tamper included"],
+      "specs": { "Capacity": "64 oz", "Power": "1400 W", "Finish": "Black / clear", "Blades": "6-point stainless" }
+    },
+    {
+      "id": "slate-toaster",
+      "name": "Slate 2-Slice Toaster",
+      "category": "kitchen",
+      "price": 5900,
+      "image": "https://images.unsplash.com/photo-1613221699807-4940ba9b83f4?auto=format&fit=crop&w=1000&q=80",
+      "short": "Even browning, wide slots, quietly handsome.",
+      "description": "Extra-wide slots fit bagels and artisan bread, while seven shade settings and a lift-and-look lever help you land the perfect toast every time.",
+      "features": ["1.5-inch extra-wide slots", "7 browning levels", "Bagel, defrost and reheat functions", "Slide-out crumb tray"],
+      "specs": { "Slots": "2 wide", "Power": "900 W", "Finish": "Black / brushed steel", "Dimensions": "11.2 × 7.1 × 7.6 in" }
+    },
+    {
+      "id": "morning-drip-coffee",
+      "name": "Morning 12-Cup Programmable Coffee Maker",
+      "category": "coffee",
+      "price": 8900,
+      "image": "https://images.unsplash.com/photo-1674504866626-fe4f19f68564?auto=format&fit=crop&w=1000&q=80",
+      "short": "Wake up to a fresh pot, brewed just right.",
+      "description": "Program your brew up to 24 hours ahead, choose regular or bold strength, and pour mid-brew without a drip. A thermal-grade carafe keeps coffee hot without scorching.",
+      "features": ["12-cup glass carafe", "24-hour programmable timer", "Bold-strength setting", "Pause-and-pour"],
+      "specs": { "Capacity": "12 cups", "Power": "1000 W", "Finish": "Matte black", "Filter": "Reusable mesh included" }
+    },
+    {
+      "id": "gooseneck-kettle",
+      "name": "Gooseneck Pour-Over Kettle",
+      "category": "coffee",
+      "price": 7400,
+      "image": "https://images.unsplash.com/photo-1738520420652-0c47cea3922b?auto=format&fit=crop&w=1000&q=80",
+      "short": "Precision flow control for the perfect pour-over.",
+      "description": "A counterbalanced handle and slender gooseneck spout give you a steady, controllable stream. Set your exact temperature to the degree and hold it for 30 minutes.",
+      "features": ["0.9 L stainless body", "Degree-precise temperature control", "Built-in brew stopwatch", "30-minute hold mode"],
+      "specs": { "Capacity": "0.9 L", "Power": "1200 W", "Finish": "Matte black", "Range": "135–212°F" }
+    },
+    {
+      "id": "precision-brew-scale",
+      "name": "Precision Brew Scale",
+      "category": "kitchen",
+      "price": 3900,
+      "image": "https://images.unsplash.com/photo-1650940925927-f4a30c930a4d?auto=format&fit=crop&w=1000&q=80",
+      "short": "Weigh, time and repeat your favorite recipes.",
+      "description": "A slim, rechargeable scale accurate to 0.1 g with an integrated timer. Equally at home measuring a pour-over or portioning a bake.",
+      "features": ["0.1 g accuracy up to 2 kg", "Integrated brew timer", "USB-C rechargeable", "Heat-resistant silicone pad"],
+      "specs": { "Capacity": "2 kg / 4.4 lb", "Accuracy": "0.1 g", "Finish": "Black", "Battery": "Rechargeable, USB-C" }
+    },
+    {
+      "id": "resonance-speaker",
+      "name": "Resonance Wireless Home Speaker",
+      "category": "electronics",
+      "price": 9900,
+      "image": "https://images.unsplash.com/photo-1511389290465-d11bafd4c1df?auto=format&fit=crop&w=1000&q=80",
+      "short": "Room-filling sound with a refined, compact build.",
+      "description": "Warm, detailed audio from a dual-driver design wrapped in fabric and metal. Pair over Bluetooth in seconds and enjoy up to 20 hours of play — in the kitchen, living room or patio.",
+      "features": ["Bluetooth 5.3 with multipoint pairing", "Up to 20 hours of playback", "Splash-resistant (IPX5)", "Built-in microphone for calls"],
+      "specs": { "Output": "30 W", "Battery": "20 hrs", "Finish": "Charcoal fabric", "Charging": "USB-C" }
+    },
+    {
+      "id": "forged-knife-set",
+      "name": "Forged 5-Piece Knife Set",
+      "category": "kitchen",
+      "price": 11900,
+      "image": "https://images.unsplash.com/photo-1609467334293-030ac6448fd8?auto=format&fit=crop&w=1000&q=80",
+      "short": "Full-tang German steel with a magnetic wall bar.",
+      "description": "Precision-forged high-carbon stainless knives, balanced for comfort and honed to a lasting edge. Displayed on a magnetic bar that keeps counters clear and blades protected.",
+      "features": ["Chef's, santoku, bread, utility and paring knives", "High-carbon German stainless steel", "Full-tang, triple-riveted handles", "16-inch magnetic wall bar included"],
+      "specs": { "Pieces": "5 knives + bar", "Steel": "X50CrMoV15", "Hardness": "56 ± 2 HRC", "Care": "Hand wash recommended" }
+    },
+    {
+      "id": "bundle-morning-ritual",
+      "name": "The Morning Ritual Set",
+      "category": "bundles",
+      "price": 33900,
+      "compareAt": 39200,
+      "badge": "Save $53",
+      "image": "https://images.unsplash.com/photo-1475296204602-08d15839e95f?auto=format&fit=crop&w=1000&q=80",
+      "short": "Espresso, grinder and kettle — your café at home.",
+      "description": "Everything for an unhurried morning: our Barista Compact Espresso Machine, Precision Conical Burr Grinder and Lumen Glass Electric Kettle, delivered together in signature gift-ready packaging.",
+      "includes": ["barista-espresso", "precision-burr-grinder", "lumen-glass-kettle"],
+      "features": ["Three full-size appliances", "Gift-ready packaging", "Ships together"]
+    },
+    {
+      "id": "bundle-pour-over",
+      "name": "The Pour-Over Edit",
+      "category": "bundles",
+      "price": 16900,
+      "compareAt": 19200,
+      "badge": "Save $23",
+      "image": "https://images.unsplash.com/photo-1537130508299-46ab547b4be3?auto=format&fit=crop&w=1000&q=80",
+      "short": "Precision tools for the deliberate brewer.",
+      "description": "Our Gooseneck Pour-Over Kettle, Precision Brew Scale and Precision Conical Burr Grinder — a complete, beautifully matched brewing station.",
+      "includes": ["gooseneck-kettle", "precision-brew-scale", "precision-burr-grinder"],
+      "features": ["Three coordinated tools", "Gift-ready packaging", "Ships together"]
+    },
+    {
+      "id": "bundle-countertop",
+      "name": "The Countertop Essentials",
+      "category": "bundles",
+      "price": 26900,
+      "compareAt": 30700,
+      "badge": "Save $38",
+      "image": "https://images.unsplash.com/photo-1745846664210-756817e1b19c?auto=format&fit=crop&w=1000&q=80",
+      "short": "The everyday trio every kitchen relies on.",
+      "description": "The Aero 6-Qt Digital Air Fryer, Vortex High-Speed Blender and Slate 2-Slice Toaster — three daily essentials in one coordinated, matte-finish set.",
+      "includes": ["aero-air-fryer", "vortex-blender", "slate-toaster"],
+      "features": ["Three daily essentials", "Coordinated finishes", "Ships together"]
+    },
+    {
+      "id": "bundle-housewarming",
+      "name": "The Housewarming Gift Set",
+      "category": "bundles",
+      "price": 18900,
+      "compareAt": 22200,
+      "badge": "Gift Favorite",
+      "image": "https://images.unsplash.com/photo-1674620213535-9b2a2553ef40?auto=format&fit=crop&w=1000&q=80",
+      "short": "A thoughtful welcome for a new home.",
+      "description": "The Lumen Glass Electric Kettle, Slate 2-Slice Toaster and Resonance Wireless Home Speaker, presented in our signature black gift box with a handwritten note on request.",
+      "includes": ["lumen-glass-kettle", "slate-toaster", "resonance-speaker"],
+      "features": ["Signature black gift box", "Complimentary gift note", "Ships together"]
+    },
+    {
+      "id": "bundle-complete-kitchen",
+      "name": "The Complete Kitchen Collection",
+      "category": "bundles",
+      "price": 58900,
+      "compareAt": 69500,
+      "badge": "Save $106",
+      "image": "https://images.unsplash.com/photo-1656402887556-e727ffe1f6d7?auto=format&fit=crop&w=1000&q=80",
+      "short": "Five signature pieces. One fully appointed kitchen.",
+      "description": "Our most complete set: the Atelier Stand Mixer, Aero Air Fryer, Vortex Blender, Forged 5-Piece Knife Set and Slate Toaster. Ideal for a new home, a remodel, or a registry.",
+      "includes": ["atelier-stand-mixer", "aero-air-fryer", "vortex-blender", "forged-knife-set", "slate-toaster"],
+      "features": ["Five full-size pieces", "Our best value", "Ships together"]
+    }
+  ]
+}

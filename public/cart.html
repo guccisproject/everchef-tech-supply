@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart — Everchef Tech Supply</title>
+  <meta name="description" content="Review the items in your Everchef Tech Supply cart.">
+  <meta name="theme-color" content="#050506">
+  <meta property="og:title" content="Your Cart — Everchef Tech Supply">
+  <meta property="og:description" content="Review the items in your Everchef Tech Supply cart.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+<main>
+
+  <div class="container">
+    <header class="page-head">
+      <span class="eyebrow">Your Selection</span>
+      <h1>Cart</h1>
+      <hr class="rule">
+    </header>
+    <div class="glass panel empty" id="cart-empty" hidden>
+      <h2>Your cart is empty</h2>
+      <p class="muted">Discover pieces designed to earn their place on your counter.</p>
+      <a class="btn" href="products.html">Shop the Collection</a>
+    </div>
+    <div class="cart-layout" id="cart-layout">
+      <div class="glass panel" id="cart-items" style="padding-top:12px;padding-bottom:12px"></div>
+      <aside class="glass panel" id="cart-summary" aria-label="Order summary"></aside>
+    </div>
+  </div>
+
+</main>
+<script src="js/main.js" defer></script>
+</body>
+</html>
